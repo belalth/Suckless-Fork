@@ -1,0 +1,9 @@
+# for taking screen shots and view media  
+sudo apt install feh 
+# for the audtio drivers : 
+sudo apt install pipewire 
+# for keybaindings
+sudo apt get install xbindkeys 
+#compositing for smooth animation and tarncparecy control 
+sudo apt install picom  # its need some configurations 
+

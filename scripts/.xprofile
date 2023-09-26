@@ -1,0 +1,5 @@
+feh --bg-scale /home/belal/Downloads/img.jpg
+slstatus &
+xrandr --output HDMI-A-1-0 --auto --mode 1440x900 --right-of eDP
+xbindkeys
+
