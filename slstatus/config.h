@@ -1,10 +1,10 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 15000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "--";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,10 +65,11 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-	{ netspeed_rx, "%sB/s  ", "wlp4s0" },
+	{ datetime, "%s  ",           "%r %a %b %d " },
+	{ netspeed_rx, "[%sB/s]  ", "wlp4s0" },
 	{battery_perc, "[Battery %s%%]  ", "BAT1"},
 	{ cpu_perc, "[CPU  %s%%]  ", NULL	      },
-	{ ram_perc, "[RAM %s%%]  ", NULL	      },
-	{ datetime, "%s",           "%a %b %d %r" },
+	{ ram_perc, "[RAM %s%% ]", NULL	      },
+	
 
 }; 
